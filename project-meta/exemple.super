@@ -1,0 +1,36 @@
+! the math:precise package contains non-floating point math utils
+import math:precise:num
+import string:[startsWith, endsWith, capitalize]
+import collection:[SortedSet as set, Set]
+
+fun makeAlphabet() -> str {
+    let alphabet <- "abcdefghijklmnopqrstuvwxyz"
+    alphabet += capitalize(alphabet)
+    return alphabet
+}
+
+! an example function
+! returns the letters in the string a
+fun foo(str a, num b) -> Set {
+    val alphabet = makeAlphabet()
+    val c <- a:len lower or equal b
+
+    if a:len equals 100 then
+        print(f"a's length is 100.")
+    else c then
+        if a:len lower b then
+            print(f"a's length is lower than {b}.")
+        else then
+            print(f"a's length is equal to {b}.")
+    else then
+        print(f"a's length is greater than {b}.")
+
+    if a:startsWith('H') and
+       a:endsWith('d') and
+       a:len equals "Hello, World":len then
+        print(r"a is likely "Hello, World".")
+
+    val bar <- a:filter({it in alphabet})
+
+    return set(bar)
+}

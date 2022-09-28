@@ -1,0 +1,16 @@
+todo list:
+- compiler
+    - lexer
+    - parser
+    - LLVM
+- syntax highlighting
+
+resources: https://www.freecodecamp.org/news/the-programming-language-pipeline-91d3f449c919/
+
+features:
+- use language features to enforce coding best practices directly in the syntax
+    - forced structure of sorts?
+        - forced type declarations imported a certain way/defined in a certain place
+- prevent variable declaration in global scope but allow constant/value declaration
+- make "=" an elixir (the language) like pattern matching symbol? (like list destructuring)
+- use ":" to declare a block and use "{}" to declare start and ends of implementations?

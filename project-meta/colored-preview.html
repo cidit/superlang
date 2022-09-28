@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Page Title</title>
+    <style>
+        .text {
+            font-family: monospace;
+            white-space: pre-wrap;
+            font-size: 25px;
+        }
+        .fun_dec {
+            color: dodgerblue;
+        }
+        .fun_braces {
+            color: darkorchid;
+        }
+
+        .property_accessor {
+            color: lawngreen;
+        }
+
+        .assignment_prefix {
+            color: darkgrey;
+        }
+        .assignment_op {
+            color: lawngreen;
+        }
+        .boolean_op {
+            color: coral;
+        }
+
+        .control_flow {
+            color: dodgerblue;
+        }
+
+        .type {
+            color: darkcyan;
+        }
+        .variable {
+            color: cyan;
+        }
+
+        .string {
+            color: green;
+        }
+        .string_format {
+            color: greenyellow;
+        }
+        .string_interpolation {
+            color: greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="text">
+        <span class="fun_dec">fun</span> foo(<span class="type">str</span> <span class="variable">a</span>, <span class="type">int</span> <span class="variable">b</span>) <span class="fun_dec">-></span> <span class="type">bool</span> <span class="fun_braces">{</span>
+            <span class="assignment_prefix">val</span> <span class="variable">c</span> <span class="assignment_op"><-</span> <span class="variable">a</span><span class="property_accessor">.</span>len <span class="boolean_op">not equals</span> <span class="variable">b</span>
+            <span class="control_flow">if</span> <span class="variable">c</span><span class="control_flow">:</span>
+                print(<span class="string"><span class="string_format">f</span>"a is not of length <span class="string_interpolation">{</span><span class="variable">b</span><span class="string_interpolation">}</span>"</span>)
+            <span class="control_flow">else</span><span class="control_flow">:</span>
+                print(<span class="string"><span class="string_format">f</span>"a is of length <span class="string_interpolation">{</span><span class="variable">b</span><span class="string_interpolation">}</span>"</span>)
+            <span class="control_flow">return</span> <span class="variable">c</span>
+        <span class="fun_braces">}</span>
+    </div>
+</body>
+</html>
